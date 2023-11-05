@@ -1,0 +1,20 @@
+server:
+  port: 8082
+hm:
+  db:
+    database: hm-cart
+  swagger:
+    title: 购物车接口文档
+    package: com.hmall.cart.controller
+  cart:
+    maxSize: 5 #购物车上限
+spring:
+  application:
+    name: cart-service
+  profiles:
+    active: dev
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090 # 控制台地址
+      http-method-specify: true #请求方式前缀
