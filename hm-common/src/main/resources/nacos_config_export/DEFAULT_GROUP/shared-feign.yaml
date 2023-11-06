@@ -1,0 +1,3 @@
+feign:
+    okhttp:
+        enabled: true

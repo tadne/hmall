@@ -1,0 +1,11 @@
+knife4j:
+  enable: true
+  openapi:
+    title: ${hm.swagger.title:mall商城接口文档}
+    description: ${hm.swagger.description:mall商城接口文档}
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - ${hm.swagger.package}

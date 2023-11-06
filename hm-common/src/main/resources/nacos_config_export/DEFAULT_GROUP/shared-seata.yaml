@@ -1,0 +1,15 @@
+seata:
+  registry: # TC服务注册中心的配置，微服务根据这些信息去注册中心获取tc服务地址
+    type: nacos # 注册中心类型 nacos
+    nacos:
+      server-addr: 192.168.101.65:8848 # nacos地址
+      namespace: "1aa1f3fc-c352-4e4f-a541-625993749b26" # namespace，默认为空
+      group: DEFAULT_GROUP # 分组，默认是DEFAULT_GROUP
+      application: seata-server # seata服务名称
+      username: nacos
+      password: nacos
+  tx-service-group: hmall # 事务组名称
+  service:
+    vgroup-mapping: # 事务组与tc集群的映射关系
+      hmall: "default"
+  data-source-proxy-mode: AT #开启数据源代理的XA模式
