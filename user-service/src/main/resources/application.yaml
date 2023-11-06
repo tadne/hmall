@@ -1,0 +1,19 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: user-service # 服务名称
+  profiles:
+    active: dev
+
+hm:
+  db:
+    database: hm-user
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  swagger:
+    title: 用户服务接口文档
+    package: com.hmall.user.controller

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: hm-service # 服务名称
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.101.65:8848 # nacos地址
+      config:
+        file-extension: yaml # 文件后缀名
+        shared-configs: # 共享配置
+          - dataId: shared-jdbc.yaml
+          - dataId: shared-log.yaml
+          - dataId: shared-swagger.yaml
+          - dataId: shared-feign.yaml
+        namespace: 1aa1f3fc-c352-4e4f-a541-625993749b26

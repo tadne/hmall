@@ -1,0 +1,9 @@
+server:
+  port: 8085
+
+hm:
+  db:
+    database: hm-trade
+  swagger:
+    title: 订单服务接口文档
+    package: com.hmall.trade.controller

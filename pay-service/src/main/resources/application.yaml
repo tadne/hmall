@@ -1,0 +1,9 @@
+server:
+  port: 8086
+
+hm:
+  db:
+    database: hm-pay
+  swagger:
+    title: 交易服务接口文档
+    package: com.hmall.pay.controller

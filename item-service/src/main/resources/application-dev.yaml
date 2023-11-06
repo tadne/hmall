@@ -1,0 +1,10 @@
+hm:
+  db:
+    host: mysql
+    pw: 123
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.101.65:8848

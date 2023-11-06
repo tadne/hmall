@@ -14,4 +14,4 @@ spring:
           - dataId: shared-swagger.yaml
           - dataId: shared-feign.yaml
           - dataId: shared-seata.yaml
-        namespace: 1aa1f3fc-c352-4e4f-a541-625993749b26
+        namespace: 1aa1f3fc-c352-4e4f-a541-625993749b26 # 命名空间id
