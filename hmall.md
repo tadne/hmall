@@ -35,4 +35,4 @@
     dev和local可以任选或不配置,使用时需指定,
     application.yaml可以配置数据库名,其他的看个人
 
-    可以注意到项目没有官方文档的Redis和ElasticSearch,这时合理的,不过最近不打算高,过段时间补上
+        可以注意到项目没有官方文档的Redis和ElasticSearch,就是没写hh,不过最近不打算搞,过段时间补上
